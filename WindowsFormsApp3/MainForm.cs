@@ -32,5 +32,17 @@ namespace WindowsFormsApp3
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ConnectedForm connectedForm = new ConnectedForm();
+            connectedForm.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CrysForm crysForm = new CrysForm();
+            crysForm.Show();
+        }
     }
 }
