@@ -53,11 +53,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CrysForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrysForm.Designer.cs">
+      <DependentUpon>CrysForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CrystalReport1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CrystalReport1.rpt</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ConnectedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnectedForm.Designer.cs">
+      <DependentUpon>ConnectedForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
