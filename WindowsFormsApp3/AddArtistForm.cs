@@ -36,5 +36,15 @@ namespace WindowsFormsApp3
             //}
             //dr.Close();
         }
+
+        private void addButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddArtistForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            conn.Dispose();
+        }
     }
 }
