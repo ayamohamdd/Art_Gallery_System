@@ -29,46 +29,35 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddArtistForm));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.usernameCombobox = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.fnameTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.emailTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.addButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lnameTextBox = new System.Windows.Forms.TextBox();
+            this.showButton = new System.Windows.Forms.Button();
+            this.artworksGridView = new System.Windows.Forms.DataGridView();
+            this.IdTextBox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.artworksGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // fnameTextBox
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            // 
-            // usernameCombobox
-            // 
-            resources.ApplyResources(this.usernameCombobox, "usernameCombobox");
-            this.usernameCombobox.FormattingEnabled = true;
-            this.usernameCombobox.Items.AddRange(new object[] {
-            resources.GetString("usernameCombobox.Items")});
-            this.usernameCombobox.Name = "usernameCombobox";
-            // 
-            // textBox1
-            // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
+            resources.ApplyResources(this.fnameTextBox, "fnameTextBox");
+            this.fnameTextBox.Name = "fnameTextBox";
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // textBox2
+            // emailTextBox
             // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
+            resources.ApplyResources(this.emailTextBox, "emailTextBox");
+            this.emailTextBox.Name = "emailTextBox";
             // 
             // label2
             // 
@@ -80,14 +69,6 @@
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
             // 
-            // comboBox2
-            // 
-            resources.ApplyResources(this.comboBox2, "comboBox2");
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            resources.GetString("comboBox2.Items")});
-            this.comboBox2.Name = "comboBox2";
-            // 
             // addButton
             // 
             resources.ApplyResources(this.addButton, "addButton");
@@ -95,40 +76,78 @@
             this.addButton.UseVisualStyleBackColor = true;
             this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // lnameTextBox
+            // 
+            resources.ApplyResources(this.lnameTextBox, "lnameTextBox");
+            this.lnameTextBox.Name = "lnameTextBox";
+            // 
+            // showButton
+            // 
+            resources.ApplyResources(this.showButton, "showButton");
+            this.showButton.Name = "showButton";
+            this.showButton.UseVisualStyleBackColor = true;
+            this.showButton.Click += new System.EventHandler(this.showButton_Click);
+            // 
+            // artworksGridView
+            // 
+            this.artworksGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            resources.ApplyResources(this.artworksGridView, "artworksGridView");
+            this.artworksGridView.Name = "artworksGridView";
+            this.artworksGridView.RowTemplate.Height = 32;
+            // 
+            // IdTextBox
+            // 
+            resources.ApplyResources(this.IdTextBox, "IdTextBox");
+            this.IdTextBox.Name = "IdTextBox";
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
             // AddArtistForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.IdTextBox);
+            this.Controls.Add(this.artworksGridView);
+            this.Controls.Add(this.showButton);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lnameTextBox);
             this.Controls.Add(this.addButton);
-            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.emailTextBox);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.usernameCombobox);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.fnameTextBox);
             this.Name = "AddArtistForm";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddArtistForm_FormClosed);
             this.Load += new System.EventHandler(this.AddArtistForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.artworksGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ComboBox usernameCombobox;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox fnameTextBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Button addButton;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox lnameTextBox;
+        private System.Windows.Forms.Button showButton;
+        private System.Windows.Forms.DataGridView artworksGridView;
+        private System.Windows.Forms.TextBox IdTextBox;
+        private System.Windows.Forms.Label label5;
     }
 }
