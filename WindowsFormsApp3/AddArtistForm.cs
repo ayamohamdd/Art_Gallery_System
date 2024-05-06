@@ -114,8 +114,19 @@ namespace WindowsFormsApp3
             //}
         }
 
-        
 
+        /*
+         * create or replace
+            procedure GetArtworks
+            (id_artist in number , atrworks out sys_refcursor)
+            as
+            begin
+            open atrworks for
+            select artwork.artwork_title
+            from artist , artwork
+            WHERE artist.artist_id = id_artist and artwork.artist_id = id_artist;
+            end;
+         */
         private void showButton_Click(object sender, EventArgs e)
         {
 
