@@ -53,6 +53,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddArtistForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddArtistForm.Designer.cs">
+      <DependentUpon>AddArtistForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArtistEnquiryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArtistEnquiryForm.Designer.cs">
+      <DependentUpon>ArtistEnquiryForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CrysForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +100,12 @@
     <Compile Include="RoundPanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="AddArtistForm.resx">
+      <DependentUpon>AddArtistForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectedForm.resx">
+      <DependentUpon>ConnectedForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CrystalReport1.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReport1.cs</LastGenOutput>
@@ -132,6 +150,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\images.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\art.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
