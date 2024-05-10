@@ -32,6 +32,7 @@ namespace WindowsFormsApp3
             this.loadButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // loadButton
@@ -63,15 +64,27 @@ namespace WindowsFormsApp3
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(365, 41);
             this.button2.TabIndex = 4;
-            this.button2.Text = "Crystal Report";
+            this.button2.Text = "Generate Exhibitions Report";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(370, 319);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(365, 41);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "Generate Order Report";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1230, 727);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.loadButton);
@@ -86,6 +99,7 @@ namespace WindowsFormsApp3
         private System.Windows.Forms.Button loadButton;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
 
